@@ -19,7 +19,8 @@ npm run start
 
 ```
 docker build .
-docker run <generated build tag>
+
+docker run -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro  <generated build tag>
 ```
 
 ### Moked AWS queue:
